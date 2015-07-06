@@ -32,5 +32,4 @@ def is_prime(input):
     return jsonify({'output': output})
 
 if __name__ == '__main__':
-    isprime(257)
-    app.run(debug=True)
+    app.run()
