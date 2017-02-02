@@ -31,6 +31,9 @@ def is_prime(input):
     output['time'] = str(round(time.time() - start_time, 2)) + ' sec'
     return jsonify({'output': output})
 
+@app.route('/')
+def hello_world():
+    return 'OK'
+
 if __name__ == '__main__':
-    isprime(257)
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0')
